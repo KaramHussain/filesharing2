@@ -16,10 +16,13 @@
 /* Style for the "Choose File" button */
 .file-label {
   background-color: #f2c94c; /* Yellowish background color */
-  color: rgb(242, 233, 233);
+  color: rgb(181, 181, 181);
   border-color: #f2c94c; /* Yellowish border color */
 }
-
+.emaillist {
+  background-color: #ffffff; /* White background color */
+  color: #000000; /* Black font color */
+}
 /* Style for the "Remove" button */
 .btn-danger {
   background-color: #dc3545; /* Red background color */

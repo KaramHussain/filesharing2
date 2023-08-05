@@ -11,7 +11,7 @@ export class FileSharingComponent {
   recipients: string[] = [];
   newRecipient = '';
   selectedFile: File | null = null; // New property to store the selected file
-  selectedFileName: string | undefined;
+  filename = ""
 
   ngOnInit(): void {}
 
@@ -31,9 +31,10 @@ export class FileSharingComponent {
 
 
   onFileChange(event: any) {
-    const inputElement = event.target as HTMLInputElement;
-    this.selectedFileName = inputElement.files?.[0]?.name;
-    // this.selectedFile = inputElement.files?.[0];
+    this.selectedFile = event.target.files[0];
+    if(this.selectedFile!=null){
+      this.filename = this.selectedFile.name
+    }
   }
 
   sendDataToBackend() {
@@ -54,9 +55,6 @@ export class FileSharingComponent {
   }
 
   sendData() {
-    this.selectedFile = null;
-    this.senderEmail = '';
-    this.recipients = [];
     // Check if a file is selected and at least one recipient is added.
     if (!this.selectedFile || this.recipients.length === 0) {
       alert('Please select a file and add at least one recipient.');
