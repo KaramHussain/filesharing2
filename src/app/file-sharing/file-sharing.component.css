@@ -1,0 +1,48 @@
+/* Add this CSS to your component's CSS file or the styles.css file in your Angular project */
+
+.container {
+  background: linear-gradient(to right, #f3bc30, #f2c94c); /* Dark to Yellowish gradient */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Glassy box shadow effect */
+  color: white;
+}
+/* Style for the email list items */
+.emaillist {
+  background-color: #ffffff; /* White background color */
+  color: #000000; /* Black font color */
+}
+
+/* Style for the "Choose File" button */
+.file-label {
+  background-color: #f2c94c; /* Yellowish background color */
+  color: rgb(242, 233, 233);
+  border-color: #f2c94c; /* Yellowish border color */
+}
+
+/* Style for the "Remove" button */
+.btn-danger {
+  background-color: #dc3545; /* Red background color */
+  border-color: #dc3545; /* Red border color */
+}
+.emaillist{
+  color: black !important;
+}
+/* Style for the "Add" and "Send" buttons */
+.btn-primary, .btn-success {
+  background-color: #000000; /* Blue background color */
+  border-color: #007bff; /* Blue border color */
+}
+.selected-file-name{
+  color:rgb(3, 3, 3) !important;
+  font-size: large;
+}
+
+/* Center the form horizontally and vertically */
+.container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+}
